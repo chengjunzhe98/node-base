@@ -7,6 +7,7 @@ const session = require("express-session")
 const MongoStore = require("connect-mongo")
 
 const apiIndexRouter = require("./routes/api/index")
+const apiUserRouter = require("./routes/api/user")
 const indexRouter = require("./routes/index")
 const usersRouter = require("./routes/users")
 const uploadRouter = require("./routes/upload")
@@ -43,6 +44,7 @@ app.use(
 )
 
 app.use("/api", apiIndexRouter)
+app.use("/api/user", apiUserRouter)
 
 app.use("/", indexRouter)
 app.use("/users", usersRouter)

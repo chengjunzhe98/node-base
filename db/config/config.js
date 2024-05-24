@@ -1,5 +1,5 @@
 module.exports = {
-  DBHOST: '127.0.0.1',
-  DBPORT: '27017',
-  DBNAME: 'chengjunzhe',
+	DBHOST: "127.0.0.1",
+	DBPORT: "27017",
+	DBNAME: "seat_app_db"
 }
